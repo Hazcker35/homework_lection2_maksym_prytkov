@@ -99,7 +99,6 @@ class Library:
                 elif isinstance(publication, JournalModel):
                     file.write(f"Журнал,{publication.title},{publication.editor},{publication.year}\n")
 
-    # Метод для загрузки списка публикаций из файла
     def load_from_file(self, filename: str) -> list[PublicationModel]:
         """
         Загружает информацию о публикациях из файла
