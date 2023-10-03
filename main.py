@@ -25,7 +25,6 @@ if __name__ == "__main__":
           f"{symbol.join([journal.publication_info() for journal in editor_journals])}")
 
     library.save_to_file("library.txt")
-
     library.remove_publication(book_1)
 
     print(f"\nСписок публикаций после удаления:\n"
