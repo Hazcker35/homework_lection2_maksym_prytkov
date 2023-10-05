@@ -97,7 +97,6 @@ class Library:
             for publication in self._publications:
                 if isinstance(publication, BookModel):
                     file.write(f"Книга,{publication.title},{publication.author},{publication.year}\n")
-
                 elif isinstance(publication, JournalModel):
                     file.write(f"Журнал,{publication.title},{publication.editor},{publication.year}\n")
 
@@ -109,6 +108,7 @@ class Library:
         """
 
         self._publications = []
+
         with open(filename, "r") as file:
             lines = file.readlines()
 

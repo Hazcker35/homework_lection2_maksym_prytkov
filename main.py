@@ -1,4 +1,4 @@
-from Classes import JournalModel, BookModel, Library
+from Classes import BookModel, JournalModel, Library
 
 if __name__ == "__main__":
     library = Library()
