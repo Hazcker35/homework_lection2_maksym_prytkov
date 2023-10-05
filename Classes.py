@@ -67,7 +67,6 @@ class Library:
         # Проверяет наличие публикации в списке и удаляет её, или выводит сообщение о неудаче
         if publication in self._publications:
             self._publications.remove(publication)
-
         else:
             print(f"Публикация {publication.title} не найдена в библиотеке")
 
