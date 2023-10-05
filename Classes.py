@@ -67,6 +67,7 @@ class Library:
         # Проверяет наличие публикации в списке и удаляет её, или выводит сообщение о неудаче
         if publication in self._publications:
             self._publications.remove(publication)
+
         else:
             print(f"Публикация {publication.title} не найдена в библиотеке")
 
@@ -107,8 +108,10 @@ class Library:
         """
 
         self._publications = []
+
         with open(filename, "r") as file:
             lines = file.readlines()
+
             for line in lines:
                 parts = line.strip().split(',')
                 if len(parts) >= 3:
